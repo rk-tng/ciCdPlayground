@@ -14,4 +14,8 @@ jobs:
         with:
           node-version: 20
       - run: yarn
+      - run: yarn build
+      - run: echo "Staring tests"
+      - run: yarn test
+      - run: yarn test:e2e
 
